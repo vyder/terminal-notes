@@ -1,0 +1,20 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.13.1)
+    ffi-locale (1.0.1)
+      ffi (>= 1.0.9)
+    ffi-ncurses (0.4.0)
+      ffi (>= 1.0.9)
+      ffi-locale (>= 1.0.0)
+    fuzzy_match (2.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ffi-ncurses (~> 0.4.0)
+  fuzzy_match (~> 2.1.0)
+
+BUNDLED WITH
+   2.0.2

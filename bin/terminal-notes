@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'terminal-notes'
+
+unless ARGV.size == 1
+  puts "usage: #{$0} folder"
+  exit
+end
+
+# TODO: Parse a ~/.notesrc
+config = {
+    directory: ARGV[0]
+}
+
+app = TerminalNotes::App.new
+app.start(config)

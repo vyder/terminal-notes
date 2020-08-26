@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+ROOT = File.expand_path("../..", __FILE__)
+
+$:.unshift File.expand_path("lib", ROOT)
+require 'terminal-notes'
+
+unless ARGV.size == 1
+  puts "usage: #{$0} folder"
+  exit
+end
+
+# Add lib into the load path
+$:.unshift File.join("lib/terminal-notes", ROOT)
+$:.unshift File.join("lib/terminal-notes/rurses", ROOT)
+
+# TODO: Parse a ~/.notesrc
+config = {
+    directory: File.expand_path(ARGV[0], ROOT)
+}
+
+app = TerminalNotes::App.new
+app.start(config)
+

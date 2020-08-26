@@ -1,0 +1,49 @@
+#!/usr/bin/env ruby
+
+require 'rurses'
+
+Rurses.program(modes: %i[c_break no_echo keypad]) do |screen|
+    start = { x: 3, y: 3 }
+    screen.move_cursor(start)
+
+    mode = :parsed
+
+    loop do
+        if mode == :parsed
+            key = Rurses.get_key
+
+            case key
+            when "\t"
+                mode = :raw
+                screen.move_cursor(start)
+                screen.draw_string(" " * 800)
+                screen.move_cursor(start)
+
+            when "q"
+                break
+
+            else
+                screen.draw_string(key)
+            end
+
+        else
+            key = Rurses.curses.getch
+
+            case key
+            when 9
+                mode = :parsed
+                screen.move_cursor(start)
+                screen.draw_string(" " * 800)
+                screen.move_cursor(start)
+
+            when 113
+                break
+            else
+                screen.draw_string("#{key},")
+            end
+        end
+
+        screen.refresh_in_memory
+        Rurses.update_screen
+    end
+end
