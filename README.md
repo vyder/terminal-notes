@@ -1,4 +1,4 @@
-# Note Transpose
+# Terminal Notes
 [![Gem Version](https://badge.fury.io/rb/terminal-notes.svg)](https://badge.fury.io/rb/terminal-notes)
 [![Build Status](https://travis-ci.org/vyder/terminal-notes.svg?branch=master)](https://travis-ci.org/vyder/terminal-notes)
 [![Inline docs](http://inch-ci.org/github/vyder/terminal-notes.svg?branch=master)](http://inch-ci.org/github/vyder/terminal-notes)
