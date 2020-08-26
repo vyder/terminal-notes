@@ -50,6 +50,8 @@ Here is my planned roadmap:
 - [ ] Draw a title bar at the top
 - [ ] Implement `.notesrc` and database
 - [ ] Create an install flow (as described in the README)
+- [ ] Restructure and write some unit tests
+- [ ] Write documentation
 - [ ] Implement responsive layout
 - [ ] Implement a better file matcher
 - [ ] Create a non fancy mode which works better in smaller terminal screens
