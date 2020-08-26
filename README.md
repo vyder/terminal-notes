@@ -52,6 +52,7 @@ Here is my planned roadmap:
 - [ ] Create an install flow (as described in the README)
 - [ ] Restructure and write some unit tests
 - [ ] Write documentation
+- [ ] Remove `rurses` from this repo and create a fork of it to depend on
 - [ ] Implement responsive layout
 - [ ] Implement a better file matcher
 - [ ] Create a non fancy mode which works better in smaller terminal screens
