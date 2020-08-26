@@ -1,2 +1,12 @@
-data/*
-tmp/*
+data/
+tmp/
+
+# Docs metadata
+.yardoc/
+
+# Artifacts
+pkg/
+*.gem
+
+# Test
+coverage/
