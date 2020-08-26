@@ -49,6 +49,7 @@ Here is my planned roadmap:
 - [ ] Draw a shortcuts info bar like `nano` has
 - [ ] Draw a title bar at the top
 - [ ] Implement `.notesrc` and database
+- [ ] Implement `finite_machine` for better internal state management
 - [ ] Create an install flow (as described in the README)
 - [ ] Restructure and write some unit tests
 - [ ] Write documentation
