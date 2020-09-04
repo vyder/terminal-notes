@@ -2,11 +2,12 @@
 
 require 'rurses'
 
+mode = ARGV[0].to_sym
+mode = :parsed unless [:parsed, :raw].include? mode
+
 Rurses.program(modes: %i[c_break no_echo keypad]) do |screen|
     start = { x: 3, y: 3 }
     screen.move_cursor(start)
-
-    mode = :parsed
 
     loop do
         if mode == :parsed
