@@ -1,7 +1,14 @@
+GIT
+  remote: git@github.com:vyder/rurses.git
+  revision: 9ba982d65f51249264f0eb24342bddc74b2d2ab5
+  specs:
+    rurses (0.1.0)
+      ffi-ncurses (~> 0.4.0)
+
 PATH
   remote: .
   specs:
-    terminal-notes (0.1.0)
+    terminal-notes (0.0.1)
       ffi-ncurses (~> 0.4.0)
       fuzzy_match (~> 2.1.0)
 
@@ -51,6 +58,7 @@ DEPENDENCIES
   rake (~> 13.0.1)
   rspec (~> 3.9.0)
   rubygems-tasks (~> 0.2.5)
+  rurses!
   simplecov (~> 0.19.0)
   terminal-notes!
   yard (~> 0.9.25)
