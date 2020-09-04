@@ -1,5 +1,6 @@
 require_relative 'terminal-notes/rurses'
 
+require_relative 'terminal-notes/version'
 require_relative 'terminal-notes/cursor'
 require_relative 'terminal-notes/widget'
 require_relative 'terminal-notes/text_field'

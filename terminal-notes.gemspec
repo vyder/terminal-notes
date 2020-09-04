@@ -1,8 +1,9 @@
 # frozen_string_literal: true
+require_relative 'lib/terminal-notes/version'
 
 Gem::Specification.new do |spec|
   spec.name    = 'terminal-notes'
-  spec.version = '0.0.1'
+  spec.version = TerminalNotes::VERSION
   spec.authors = ['Vidur Murali']
   spec.email   = ['vidur@monkeychai.com']
 
